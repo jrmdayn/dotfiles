@@ -15,4 +15,7 @@ echo "Setting up shell configs..."
 ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc
 ln -sf "$DOTFILES_DIR/.bashrc" ~/.bashrc
 
-echo "Done! Restart your shell or run: source ~/.zshrc"
+echo "Setting up atuin.sh"
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
+echo "Done!"
