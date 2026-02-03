@@ -11,7 +11,8 @@ echo "Setting up starship config..."
 mkdir -p ~/.config
 starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
-echo "Setting up .zshrc..."
+echo "Setting up shell configs..."
 ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc
+ln -sf "$DOTFILES_DIR/.bashrc" ~/.bashrc
 
 echo "Done! Restart your shell or run: source ~/.zshrc"
